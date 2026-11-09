@@ -1,38 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Вход — Startupium</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080914">
+  <title>Вход — Startupium</title><link rel="stylesheet" href="styles.css">
+  <script src="auth.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <a href="index.html" class="logo">🚀 Startupium</a>
-      <div class="nav-links">
-        <a href="startups.html">Проекты</a>
-        <a href="developers.html">Специалисты</a>
-        <a href="about.html">О платформе</a>
-        <a href="register.html" class="btn">Регистрация</a>
-      </div>
-    </nav>
-  </header>
-
-  <div class="form-container">
-    <h1>Войти</h1>
-    <form onsubmit="event.preventDefault(); alert('Это прототип. В реальной версии здесь будет авторизация.');">
-      <label>Email</label>
-      <input type="email" required placeholder="email@example.com">
-
-      <label>Пароль</label>
-      <input type="password" required>
-
-      <button type="submit" class="btn" style="width:100%; margin-top:1.5rem;">Войти</button>
+  <header><nav class="container">
+    <a href="index.html" class="logo">🚀 Startupium</a>
+    <div class="nav-links"><a href="startups.html">Проекты</a><a href="developers.html">Специалисты</a><a href="about.html">О платформе</a><a href="register.html" class="btn">Регистрация</a></div>
+  </nav></header>
+  <main class="form-container">
+    <h1>С возвращением</h1><p class="form-subtitle">Войди, чтобы продолжить работу над идеями.</p>
+    <form id="login-form" novalidate>
+      <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="email@example.com" required>
+      <label for="password">Пароль</label><input id="password" name="password" type="password" autocomplete="current-password" required>
+      <button type="submit" class="btn form-submit">Войти</button>
+      <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
     </form>
-    <p style="text-align:center; margin-top:1.5rem; color:var(--muted);">
-      Нет аккаунта? <a href="register.html">Создать</a>
-    </p>
-  </div>
-</body>
-</html>
+    <p class="form-footnote">Нет аккаунта? <a href="register.html">Создать</a></p>
+    <p class="prototype-note">Демо-режим: вход работает только с аккаунтом, созданным в этом браузере. Это не серверная авторизация.</p>
+  </main>
+</body></html>
