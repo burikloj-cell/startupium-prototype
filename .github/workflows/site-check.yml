@@ -1,0 +1,23 @@
+name: Site checks
+
+on:
+  push:
+    branches: [main, codex/write-access-check]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-static-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate local pages and scripts
+        run: node scripts/check-site.mjs

@@ -1,71 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Специалисты — Startupium</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080914"><meta name="description" content="Познакомься со специалистами и найди единомышленников для своего проекта.">
+  <title>Специалисты — Startupium</title><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <a href="index.html" class="logo">🚀 Startupium</a>
-      <div class="nav-links">
-        <a href="startups.html">Проекты</a>
-        <a href="developers.html">Специалисты</a>
-        <a href="about.html">О платформе</a>
-        <a href="login.html" class="btn-outline">Войти</a>
-        <a href="register.html" class="btn">Начать</a>
-      </div>
-    </nav>
-  </header>
-
-  <main class="container" style="padding: 3rem 1.5rem;">
-    <h1 style="margin-bottom: 0.5rem;">Специалисты</h1>
-    <p style="color: var(--muted); margin-bottom: 2rem;">Найди людей в команду по стеку и интересам.</p>
-
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><nav class="container site-nav" aria-label="Основная навигация">
+    <a class="logo" href="index.html">🚀 Startupium</a><div class="nav-links">
+      <a href="startups.html">Проекты</a><a href="developers.html" aria-current="page">Специалисты</a><a href="about.html">О платформе</a><a class="btn-outline" href="login.html">Войти</a><a class="btn" href="register.html">Начать</a>
+    </div>
+  </nav></header>
+  <main id="main" class="container page-main">
+    <div class="page-heading"><span class="eyebrow">Люди и навыки</span><h1>Специалисты</h1><p>Найди людей в команду по стеку, опыту и интересам.</p></div>
     <div class="list">
-      <div class="person-card">
-        <div class="avatar">A</div>
-        <div style="flex:1">
-          <h3>Andrew Wladislaw</h3>
-          <p>Backend / DevOps. Пишу на Go, поднимаю сервисы, люблю чистый код и нормальную инфраструктуру.</p>
-          <div class="meta">Стек: Go (Golang), Docker, PostgreSQL • Рейтинг: 4.8</div>
-          <div class="tags" style="margin-top:0.5rem"><span>Go</span><span>DevOps</span><span>Backend</span></div>
-        </div>
-      </div>
-
-      <div class="person-card">
-        <div class="avatar">K</div>
-        <div style="flex:1">
-          <h3>kilon pon</h3>
-          <p>Full-stack. Делаю и фронт, и бэк. Люблю TypeScript и быстро собираемые прототипы.</p>
-          <div class="meta">Стек: JavaScript, TypeScript, Python, React • Рейтинг: 4.6</div>
-          <div class="tags" style="margin-top:0.5rem"><span>TypeScript</span><span>Full-stack</span></div>
-        </div>
-      </div>
-
-      <div class="person-card">
-        <div class="avatar">M</div>
-        <div style="flex:1">
-          <h3>Mira Design</h3>
-          <p>UI/UX дизайнер. Делаю интерфейсы, которые не хочется закрывать. Figma + немного вёрстки.</p>
-          <div class="meta">Стек: Figma, Tailwind • Рейтинг: 5.0</div>
-          <div class="tags" style="margin-top:0.5rem"><span>Дизайн</span><span>Figma</span></div>
-        </div>
-      </div>
+      <article class="person-card"><div class="avatar" aria-hidden="true">A</div><div class="card-content"><h2>Andrew Wladislaw</h2><p>Backend / DevOps. Пишу на Go, поднимаю сервисы, люблю чистый код и надёжную инфраструктуру.</p><div class="meta">Стек: Go, Docker, PostgreSQL · Рейтинг: 4.8</div><div class="tags"><span>Go</span><span>DevOps</span><span>Backend</span></div></div></article>
+      <article class="person-card"><div class="avatar" aria-hidden="true">K</div><div class="card-content"><h2>kilon pon</h2><p>Full-stack. Делаю frontend и backend, люблю TypeScript и быстро собираемые прототипы.</p><div class="meta">Стек: JavaScript, TypeScript, Python, React · Рейтинг: 4.6</div><div class="tags"><span>TypeScript</span><span>Full-stack</span><span>React</span></div></div></article>
+      <article class="person-card"><div class="avatar" aria-hidden="true">M</div><div class="card-content"><h2>Mira Design</h2><p>UI/UX-дизайнер. Проектирую интерфейсы в Figma и помогаю доводить их до вёрстки.</p><div class="meta">Стек: Figma, Tailwind · Рейтинг: 5.0</div><div class="tags"><span>Дизайн</span><span>Figma</span><span>UI/UX</span></div></div></article>
     </div>
+    <p class="prototype-note">Профили на этой странице — демонстрационные примеры, а не реальные проверенные аккаунты.</p>
   </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2026 Startupium. Прототип.</p>
-      <div>
-        <a href="about.html">О платформе</a>
-        <a href="#">Политика</a>
-        <a href="#">Условия</a>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Startupium. Демонстрационный прототип.</p><nav aria-label="Информация"><a href="about.html">О платформе</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a></nav></div></footer>
+</body></html>

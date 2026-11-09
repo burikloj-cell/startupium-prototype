@@ -1,75 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Проекты — Startupium</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080914"><meta name="description" content="Посмотри проекты Startupium и найди идею, к которой хочешь присоединиться.">
+  <title>Проекты — Startupium</title><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <a href="index.html" class="logo">🚀 Startupium</a>
-      <div class="nav-links">
-        <a href="startups.html">Проекты</a>
-        <a href="developers.html">Специалисты</a>
-        <a href="about.html">О платформе</a>
-        <a href="login.html" class="btn-outline">Войти</a>
-        <a href="register.html" class="btn">Начать</a>
-      </div>
-    </nav>
-  </header>
-
-  <main class="container" style="padding: 3rem 1.5rem;">
-    <h1 style="margin-bottom: 0.5rem;">Проекты и стартапы</h1>
-    <p style="color: var(--muted); margin-bottom: 2rem;">Найди идею, к которой хочешь присоединиться, или вдохновись чужими.</p>
-
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><nav class="container site-nav" aria-label="Основная навигация">
+    <a class="logo" href="index.html">🚀 Startupium</a><div class="nav-links">
+      <a href="startups.html" aria-current="page">Проекты</a><a href="developers.html">Специалисты</a><a href="about.html">О платформе</a><a class="btn-outline" href="login.html">Войти</a><a class="btn" href="register.html">Начать</a>
+    </div>
+  </nav></header>
+  <main id="main" class="container page-main">
+    <div class="page-heading"><span class="eyebrow">Открытые идеи</span><h1>Проекты и стартапы</h1><p>Найди идею, к которой хочешь присоединиться, или вдохновись чужими.</p></div>
     <div class="list">
-      <div class="startup-card">
-        <div class="avatar">П</div>
-        <div style="flex:1">
-          <h3>ПрогулкаНЛО</h3>
-          <p>Простая игра-прогулка с элементами исследования и сбора предметов. Ищем фронтендера на HTMX/TS и дизайнера интерфейса.</p>
-          <div class="meta">Автор: Andrew • 08.11.2026 • Стек: Go, TypeScript, HTMX, PostgreSQL</div>
-          <div class="tags" style="margin-top:0.5rem"><span>Go</span><span>TypeScript</span><span>HTMX</span></div>
-        </div>
-      </div>
-
-      <div class="startup-card">
-        <div class="avatar">E</div>
-        <div style="flex:1">
-          <h3>EduFlow</h3>
-          <p>Платформа коротких курсов от студентов для студентов. Нужен бэкенд-разработчик на Go и кто-то по маркетингу.</p>
-          <div class="meta">Автор: kilon • 07.11.2026 • Стек: Python, React</div>
-          <div class="tags" style="margin-top:0.5rem"><span>Python</span><span>React</span></div>
-        </div>
-      </div>
-
-      <div class="startup-card">
-        <div class="avatar">N</div>
-        <div style="flex:1">
-          <h3>NightOwl</h3>
-          <p>Трекер привычек для ночных сов. Минималистичный, без лишнего. Ищем ещё одного бэкендера.</p>
-          <div class="meta">Автор: Alex • 05.11.2026 • Стек: Go, HTMX, SQLite</div>
-          <div class="tags" style="margin-top:0.5rem"><span>Go</span><span>HTMX</span></div>
-        </div>
-      </div>
+      <article class="startup-card"><div class="avatar" aria-hidden="true">П</div><div class="card-content"><h2>ПрогулкаНЛО</h2><p>Игра-прогулка с элементами исследования и сбора предметов. Ищем frontend-разработчика на HTMX/TypeScript и дизайнера интерфейса.</p><div class="meta">Автор: Andrew · 08.11.2026 · Go, TypeScript, HTMX, PostgreSQL</div><div class="tags"><span>Go</span><span>TypeScript</span><span>HTMX</span><span>PostgreSQL</span></div></div></article>
+      <article class="startup-card"><div class="avatar" aria-hidden="true">E</div><div class="card-content"><h2>EduFlow</h2><p>Платформа коротких курсов от студентов для студентов. Нужен backend-разработчик на Go и специалист по маркетингу.</p><div class="meta">Автор: kilon · 07.11.2026 · Python, React</div><div class="tags"><span>Python</span><span>React</span></div></div></article>
+      <article class="startup-card"><div class="avatar" aria-hidden="true">N</div><div class="card-content"><h2>NightOwl</h2><p>Минималистичный трекер привычек для ночных сов. Ищем ещё одного backend-разработчика.</p><div class="meta">Автор: Alex · 05.11.2026 · Go, HTMX, SQLite</div><div class="tags"><span>Go</span><span>HTMX</span><span>SQLite</span></div></div></article>
     </div>
-
-    <div style="margin-top: 2rem; text-align: center;">
-      <a href="register.html" class="btn">Создать свой проект</a>
-    </div>
+    <div class="center-actions"><a class="btn" href="register.html">Создать свой проект</a></div>
+    <p class="prototype-note">Карточки на этой странице — демонстрационные примеры. Публикация проектов и отклики пока не подключены к серверу.</p>
   </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2026 Startupium. Прототип.</p>
-      <div>
-        <a href="about.html">О платформе</a>
-        <a href="#">Политика</a>
-        <a href="#">Условия</a>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Startupium. Демонстрационный прототип.</p><nav aria-label="Информация"><a href="about.html">О платформе</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a></nav></div></footer>
+</body></html>

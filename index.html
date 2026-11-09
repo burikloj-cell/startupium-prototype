@@ -1,87 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Startupium — Найди команду, инвесторов и партнёров</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080914">
+  <meta name="description" content="Startupium — место, где создатели находят команду, объединяются вокруг идей и запускают первые проекты.">
+  <title>Startupium — Найди команду. Запусти идею.</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav class="container">
-      <a href="index.html" class="logo">🚀 Startupium</a>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <nav class="container site-nav" aria-label="Основная навигация">
+      <a class="logo" href="index.html" aria-label="Startupium — главная">🚀 Startupium</a>
       <div class="nav-links">
         <a href="startups.html">Проекты</a>
         <a href="developers.html">Специалисты</a>
         <a href="about.html">О платформе</a>
-        <a href="login.html" class="btn-outline">Войти</a>
-        <a href="register.html" class="btn">Начать</a>
+        <a class="btn-outline" href="login.html">Войти</a>
+        <a class="btn" href="register.html">Регистрация</a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
-      <div class="container">
-        <h1>Найди команду.<br>Запусти идею.<br>Без лишней бюрократии.</h1>
-        <p>Платформа для молодых создателей: разработчиков, дизайнеров, маркетологов и всех, кто хочет делать проекты вместе, а не просто мечтать.</p>
+      <div class="container hero-content">
+        <span class="eyebrow">Идеи становятся проектами</span>
+        <h1>Найди команду.<br>Запусти идею.<br><span>Без лишней бюрократии.</span></h1>
+        <p>Платформа для разработчиков, дизайнеров и всех, кто хочет создавать проекты вместе, получать опыт и превращать задумки в работающие продукты.</p>
         <div class="hero-actions">
-          <a href="startups.html" class="btn">Найти проект</a>
-          <a href="register.html" class="btn-outline">Собрать команду</a>
+          <a class="btn" href="startups.html">Найти проект <span aria-hidden="true">↗</span></a>
+          <a class="btn-outline" href="register.html">Собрать команду</a>
         </div>
+        <p class="hero-note">Бесплатный старт · Команда по интересам · Первые прототипы</p>
       </div>
     </section>
 
-    <section class="features container">
-      <h2>Как это работает</h2>
+    <section class="section container" aria-labelledby="how-title">
+      <div class="section-heading">
+        <span class="eyebrow">Простой старт</span>
+        <h2 id="how-title">Как это работает</h2>
+        <p>Три шага от идеи до совместной работы.</p>
+      </div>
       <div class="grid">
-        <div class="card">
-          <h3>1. Создай профиль</h3>
-          <p>Укажи стек, навыки и чем горишь. Go, Figma, маркетинг — всё считается.</p>
-        </div>
-        <div class="card">
-          <h3>2. Найди или создай проект</h3>
-          <p>Листай идеи или опубликуй свою. Пиши автору напрямую.</p>
-        </div>
-        <div class="card">
-          <h3>3. Работай вместе</h3>
-          <p>Собирайтесь в Discord, делите задачи и запускайте прототип.</p>
-        </div>
+        <article class="card"><span class="step-number">01</span><h3>Создай профиль</h3><p>Расскажи о навыках, интересах и технологиях, с которыми работаешь.</p></article>
+        <article class="card"><span class="step-number">02</span><h3>Найди или создай проект</h3><p>Изучи идеи сообщества или подготовь собственную — даже если пока есть только концепция.</p></article>
+        <article class="card"><span class="step-number">03</span><h3>Собери команду</h3><p>Объединяйтесь, распределяйте задачи и выпускайте первый прототип.</p></article>
       </div>
     </section>
 
-    <section class="preview container">
-      <h2>Новые проекты</h2>
-      <div class="cards-grid">
-        <div class="project-card">
-          <div class="badge">Новое</div>
-          <h3>ПрогулкаНЛО</h3>
-          <p>Автор: Andrew • 08.11</p>
-          <p>Простая игра-прогулка с элементами исследования. Ищем фронтендера и дизайнера.</p>
-          <div class="tags"><span>Go</span><span>TypeScript</span><span>HTMX</span></div>
-          <a href="startups.html" class="link">Подробнее →</a>
-        </div>
-        <div class="project-card">
-          <h3>EduFlow</h3>
-          <p>Автор: kilon • 07.11</p>
-          <p>Платформа для мини-курсов от студентов. Нужен бэкенд на Go.</p>
-          <div class="tags"><span>Python</span><span>React</span></div>
-          <a href="startups.html" class="link">Подробнее →</a>
-        </div>
+    <section class="section container" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <span class="eyebrow">Сообщество в движении</span>
+        <h2 id="projects-title">Проекты на старте</h2>
+        <p>Примеры идей, которые ищут единомышленников.</p>
       </div>
-      <a href="startups.html" class="btn-outline" style="margin-top: 1.5rem; display: inline-block;">Все проекты</a>
+      <div class="cards-grid">
+        <article class="project-card">
+          <span class="badge">Новый проект</span>
+          <h3>ПрогулкаНЛО</h3><p class="meta">Автор: Andrew · 08.11.2026</p>
+          <p>Игра-прогулка с исследованием мира и сбором предметов. Ищем фронтендера и дизайнера.</p>
+          <div class="tags"><span>Go</span><span>TypeScript</span><span>HTMX</span></div>
+          <a class="text-link" href="startups.html">Подробнее <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="project-card">
+          <h3>EduFlow</h3><p class="meta">Автор: kilon · 07.11.2026</p>
+          <p>Платформа коротких курсов от студентов для студентов. Нужен backend-разработчик.</p>
+          <div class="tags"><span>Python</span><span>React</span></div>
+          <a class="text-link" href="startups.html">Подробнее <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+      <div class="center-actions"><a class="btn-outline" href="startups.html">Все проекты</a></div>
+    </section>
+
+    <section class="cta-panel container">
+      <div><span class="eyebrow">Твой следующий шаг</span><h2>Есть идея? Не запускай её в одиночку.</h2><p>Создай профиль и найди людей, которым интересно то же, что и тебе.</p></div>
+      <a class="btn" href="register.html">Присоединиться</a>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>© 2026 Startupium. Прототип.</p>
-      <div>
-        <a href="about.html">О платформе</a>
-        <a href="#">Политика</a>
-        <a href="#">Условия</a>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Startupium. Демонстрационный прототип.</p>
+      <nav aria-label="Информация"><a href="about.html">О платформе</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a></nav>
     </div>
   </footer>
 </body>
