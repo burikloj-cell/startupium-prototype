@@ -1,29 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080914">
-  <title>Регистрация — Startupium</title><link rel="stylesheet" href="styles.css">
-  <script src="auth.js" defer></script>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080914"><meta name="description" content="Создай демо-аккаунт Startupium.">
+  <title>Регистрация — Startupium</title><link rel="stylesheet" href="styles.css"><script src="auth.js" defer></script>
 </head>
 <body>
-  <header><nav class="container">
-    <a href="index.html" class="logo">🚀 Startupium</a>
-    <div class="nav-links"><a href="startups.html">Проекты</a><a href="developers.html">Специалисты</a><a href="about.html">О платформе</a><a href="login.html" class="btn-outline">Войти</a></div>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header"><nav class="container site-nav" aria-label="Основная навигация">
+    <a class="logo" href="index.html">🚀 Startupium</a><div class="nav-links"><a href="startups.html">Проекты</a><a href="developers.html">Специалисты</a><a href="about.html">О платформе</a><a class="btn-outline" href="login.html">Войти</a></div>
   </nav></header>
-  <main class="form-container">
-    <h1>Создать аккаунт</h1><p class="form-subtitle">Начни собирать команду и запускать идеи.</p>
+  <main id="main" class="form-container">
+    <span class="eyebrow">Добро пожаловать</span><h1>Создать аккаунт</h1><p class="form-subtitle">Начни собирать команду и запускать идеи.</p>
     <form id="register-form" novalidate>
       <label for="name">Имя</label><input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="50" placeholder="Как тебя зовут" required>
       <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="email@example.com" required>
       <label for="password">Пароль</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="128" placeholder="Минимум 8 символов" required>
       <label for="password-confirm">Повтори пароль</label><input id="password-confirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="8" maxlength="128" placeholder="Ещё раз пароль" required>
-      <label class="checkbox"><input type="checkbox" name="privacy" required><span>Я согласен(на) на обработку персональных данных.</span></label>
-      <label class="checkbox"><input type="checkbox" name="terms" required><span>Я принимаю условия использования платформы.</span></label>
+      <label class="checkbox"><input type="checkbox" name="privacy" required><span>Я ознакомился(ась) с <a href="privacy.html">информацией о конфиденциальности</a>.</span></label>
+      <label class="checkbox"><input type="checkbox" name="terms" required><span>Я принимаю <a href="terms.html">условия использования</a>.</span></label>
       <button type="submit" class="btn form-submit">Создать аккаунт</button>
       <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
     </form>
     <p class="form-footnote">Уже есть аккаунт? <a href="login.html">Войти</a></p>
-    <p class="prototype-note">Демо-режим: аккаунт сохраняется только в этом браузере. Это не настоящая серверная регистрация; не используй здесь пароль от других сервисов.</p>
+    <p class="prototype-note">Демо-режим: данные аккаунта хранятся только в локальном хранилище этого браузера. Это не настоящая серверная регистрация. Не используй пароль от других сервисов.</p>
   </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Startupium.</p><nav aria-label="Информация"><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a></nav></div></footer>
 </body></html>
