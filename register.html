@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация — Startupium</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">🚀 Startupium</a>
+      <div class="nav-links">
+        <a href="startups.html">Проекты</a>
+        <a href="developers.html">Специалисты</a>
+        <a href="about.html">О платформе</a>
+        <a href="login.html" class="btn-outline">Войти</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h1>Создать аккаунт</h1>
+    <form onsubmit="event.preventDefault(); alert('Это прототип. В реальной версии здесь будет регистрация.');">
+      <label>Имя</label>
+      <input type="text" required placeholder="Как тебя зовут">
+
+      <label>Email</label>
+      <input type="email" required placeholder="email@example.com">
+
+      <label>Пароль</label>
+      <input type="password" required minlength="6">
+
+      <label class="checkbox">
+        <input type="checkbox" required>
+        <span>Я даю согласие на обработку персональных данных в соответствии с Политикой конфиденциальности.</span>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" required>
+        <span>Я принимаю условия работы на платформе.</span>
+      </label>
+
+      <button type="submit" class="btn" style="width:100%; margin-top:1rem;">Создать аккаунт</button>
+    </form>
+    <p style="text-align:center; margin-top:1.5rem; color:var(--muted);">
+      Уже есть аккаунт? <a href="login.html">Войти</a>
+    </p>
+  </div>
+</body>
+</html>

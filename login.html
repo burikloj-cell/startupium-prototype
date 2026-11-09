@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход — Startupium</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">🚀 Startupium</a>
+      <div class="nav-links">
+        <a href="startups.html">Проекты</a>
+        <a href="developers.html">Специалисты</a>
+        <a href="about.html">О платформе</a>
+        <a href="register.html" class="btn">Регистрация</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h1>Войти</h1>
+    <form onsubmit="event.preventDefault(); alert('Это прототип. В реальной версии здесь будет авторизация.');">
+      <label>Email</label>
+      <input type="email" required placeholder="email@example.com">
+
+      <label>Пароль</label>
+      <input type="password" required>
+
+      <button type="submit" class="btn" style="width:100%; margin-top:1.5rem;">Войти</button>
+    </form>
+    <p style="text-align:center; margin-top:1.5rem; color:var(--muted);">
+      Нет аккаунта? <a href="register.html">Создать</a>
+    </p>
+  </div>
+</body>
+</html>
